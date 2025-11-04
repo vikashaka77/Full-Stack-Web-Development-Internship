@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-container">
-        <h1 class="calculator-heading">Basic Calculator</h1>
-        <div class="calculator">
-            <div class="display">
-                <input type="text" id="inputBox" placeholder="0" readonly>
-            </div>
-            <div class="row">
-                <button class="opr">AC</button>
-                <button class="opr">DEL</button>
-                <button class="opr">%</button>
-                <button class="opr">/</button>
-            </div>
-            <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="opr">*</button>
-            </div>
-            <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="opr">+</button>
-            </div>
-            <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="opr">-</button>
-            </div>
-            <div class="row">
-                <button>00</button>
-                <button>0</button>
-                <button>.</button>
-                <button id="eqBtn">=</button>
-            </div>
-        </div>
+  <header class="header">
+  <h1>TechWorld Blog</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="post.html">Post</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <button id="signup-btn" class="signup-btn">Sign Up</button>
+</header>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- Hero Slider -->
+  <section class="hero-slider">
+    <div class="slide fade active" style="background-image: url('./images/new%20AI%201.jpg')">
+      <div class="overlay">
+        <h2>Explore the Future of AI</h2>
+        <p>Innovations shaping tomorrow’s technology.</p>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <div class="slide fade" style="background-image: url('./images/AI2.jpg')">
+      <div class="overlay">
+        <h2>Smart Devices Revolution</h2>
+        <p>Discover how IoT connects our world.</p>
+      </div>
+    </div>
+    <div class="slide fade" style="background-image: url('./images/A3.jpg')">
+      <div class="overlay">
+        <h2>Machine Learning in Action</h2>
+        <p>From predictions to automation — it’s all here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="blog-container">
+      <main id="posts">
+        <!-- Blog post 1 -->
+        <article class="post">
+          <h2>The Rise Of Artificial Intelligence</h2>
+          <p class="date">Published on: October 12, 2025</p>
+          <img src="./images/A4.jpg" alt="The Rise Of AI">
+          <p>
+            <b>The Rise Of Artificial Intelligence (AI)</b> is a modern technological revolution driven by advancements in computing power, big data, and machine learning. Key drivers include breakthroughs in deep learning and the ability of AI systems to analyze vast amounts of data.
+            <a href="https://share.google/BNITwML9IFJFrBLCf" target="_blank">Read more</a>.
+          </p>
+        </article>
+      </main>
+    </div>
+
+    <div class="comment">
+      <h3>Comments</h3>
+      <div class="comment-list-1"></div>
+      <textarea id="comment-input-1" placeholder="Write a comment..."></textarea>
+      <button onclick="addComment(1)">Post Comment</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+ <footer>
+  <div class="footer-container">
+    <p>© 2025 TechWorld Blog | Designed by Vikash Upadhyay</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Add this in <head> of all HTML files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </body>
 </html>

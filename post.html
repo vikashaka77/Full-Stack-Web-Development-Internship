@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld Blog - Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header class="header">
+  <h1>TechWorld Blog</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="post.html">Post</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <button id="signup-btn" class="signup-btn">Sign Up</button>
+</header>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+
+  <main id="posts">
+    <article class="post">
+      <h2>What Is AI And How It Works</h2>
+      <p class="date">Published on: October 5, 2025</p>
+      <img src="./images/A5.jpg" alt="AI and Its Works">
+      <p>
+        <b>Artificial Intelligence (AI)</b> enables machines to perform tasks requiring human intelligence. It works by using algorithms, datasets, and computational power.
+        <a href="https://www.coursera.org/articles/how-does-ai-work" target="_blank">For More</a>.
+      </p>
+    </article>
+
+    <article class="post">
+      <h2>Future of AI</h2>
+      <p class="date">Published on: September 28, 2025</p>
+      <img src="./images/new AI 1.jpg" alt="Robot Image">
+      <p>
+        <strong>The future of AI</strong> involves deeper integration into our daily lives. Key advancements include improved weather forecasting, personalized education, and enhanced healthcare diagnostics.
+        <a href="https://www.ibm.com/think/insights/artificial-intelligence-future" target="_blank">Read more</a>.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <p>© 2025 TechWorld Blog | Designed by Vikash Upadhyay</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Add this in <head> of all HTML files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</body>
+</html>
